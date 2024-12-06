@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            font-family: "Courier New", monospace;
+            text-align: right;
+            color: purple;
+        }
+
+        #pyramidTable {
+            margin: 0 auto;
+        }
+
+        #content {
+            background-color: lightgray;
+            border-style: solid;
+            border-color: purple;
+            border-radius: 0px;
+        }
+
+        #interact {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+        h1 {
+            background-color: lightgray;
+            border-style: solid;
+            border-color: purple;
+            padding: 20px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Pyramid Slide</h1>
+
+    <br>
+
+    <div id="content">
+
+        <div id="interact">
+    
+            <label> Brick Symbol: </label>
+        
+            <select id="symbol">
+                
+                <option value="#">#</option>
+                
+                <option value="@">@</option>
+                
+                <option value="X">X</option>
+                
+                <option value="$">$</option>
+        
+            </select>
+        
+            <label>How high?</label>
+        
+            <input type="range" id="heightCheck" min="1" max ="20"/>
+        
+            <span id="displayHeight"> 11 </span>
+        
+            <br><br>
+
+        </div>
+    
+        <table id="pyramidTable">
+    
+            <tr>
+                <td>
+                    <div id="pyramid"></div>
+                </td>
+            </tr>
+            
+        </table>
+    
+    </div>
+
+    <script src="mario.js"></script>
+</body>
+</html>
